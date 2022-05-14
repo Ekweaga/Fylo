@@ -9,6 +9,9 @@ import profile1 from './images/profile-1.jpg'
 import profile2 from './images/profile-2.jpg'
 import profile3 from './images/profile-3.jpg'
 import './home.css';
+import email from './images/icon-email.svg';
+import phone from './images/icon-phone.svg';
+import quote from './images/bg-quotes.png'
 
 function Home() {
   return (
@@ -32,19 +35,43 @@ function Home() {
     </div>
 
     <div className='ft'>
-                    <div>
+        <div className='fets'>
+                    <div className='fet'>
                             <img src={acess}/>
+                            <div>
+                                <h1>Access your files,anywhere</h1>
+                                <p>The ability to use a smartphone , tablet or computer to access your account means your files follow 
+                                    you everywhere
+                                </p>
+                            </div>
+
                     </div>
-                    <div>
+                    <div className='fet'>
                             <img src={any}/>
-                    </div>
-                    <div>
+                            <div>
+                                <h1>Store any type of file</h1>
+                                <p>Whether you are sharing holidays photos or work documents , Fylo gat you covered allowing formall files types
+                                    to be securely stored and saved
+                                </p>
+                            </div>
+                    </div></div>
+                    <div className='fets'>
+                    <div className='fet'>
                             <img src={colla}/>
+                            <div>
+                                <h1>Real-time collaboration</h1>
+                                <p>
+                                    Securelyshare files and folders with friends, families for live collaboration. No email attachments required
+                                </p>
+                            </div>
                     </div>
-                    <div>
+                    <div className='fet'>
                             <img src={sec}/>
+                            <div><h1>Security you can trust</h1>
+                            <p>
+                                Authentication and user-controlled encryption are a couple of security options given</p></div>
                     </div>
-                </div>
+                </div></div>
     <div className='prod'>
         <div className='prod1' >
             <img src={mgs}/>
@@ -54,6 +81,10 @@ function Home() {
             </div>
         </div>
     </div>
+    <div style={{width:'50px',float:'left'}} className="quote">
+    <img src={quote} style={{width:'50px'}} />
+    </div><br/>
+   
 <div className='comments'>
     <div>
            <section>
@@ -86,6 +117,50 @@ function Home() {
 
 </div>
 </div>
+<footer>
+    <div className='contact'>
+        <div>
+            <h1>Get early access today</h1>
+            <p>It only take a minute to sign up and our free starter is very generous
+                If you have any questions, do well to make it known to us
+            </p></div>
+            <div>
+                <input type="email" placeholde="email@gmail.com"/> <button>Send</button>
+        </div>
+
+    </div>
+    
+    <div className='footer'>
+        <div className='h1'>
+            <h1>
+                FYLO
+            </h1>
+            <p>We stores all your most important files in one secure location, access them whenever you need,share and collaborate with 
+                friends,families and co-workers</p>
+        </div>
+        <div>
+            <img src={email}/> hikay133@gmail.com
+            <br/>
+            <img src={phone}/> 08148837221
+        </div>
+        <div>
+            <ul>
+                <li>About Us</li>
+                <li>Home</li>
+                <li>Start</li>
+            </ul>
+        </div>
+        <div>
+        <ul>
+                <li>About Us</li>
+                <li>Home</li>
+              
+            </ul>
+        </div>
+       
+
+    </div>
+</footer>
     </>
   )
 }
